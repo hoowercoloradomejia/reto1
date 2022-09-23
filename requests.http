@@ -1,0 +1,40 @@
+
+##
+POST http://localhost:3000/api/people HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "hoowerrr",
+    "lastname": "Colorado Mejia",
+    "age": 32,
+    "email": "hcolorado81290@uumanizales.edu.co",
+    "proffession": "Estudiante de ingenieria",
+    "address_work":{
+        "code_zip": "2345",
+        "city_name": "Manizales",
+        "coordinates": [75654, -75989]
+    }
+}
+###
+GET http://localhost:3000/api/people/person HTTP/1.1
+###
+GET http://localhost:3000/api/people/632cef88826e9f3c6ca8f144 HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/people/632cef88826e9f3c6ca8f144 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/people/632cef88826e9f3c6ca8f144 HTTP/1.1
+Content-Type: application/json
+
+{
+    "user_name": "jhoseft",
+    "lastname": "Colorado Cardona",
+    "age": 32,
+    "email": "jhoseft@umanizales.edu.co",
+    "proffession": "Estudiante de ingenieria",
+    "address_work":{
+        "code_zip": "2345",
+        "city_name": "Manizales",
+        "coordinates": [75654, -75989]
+}
